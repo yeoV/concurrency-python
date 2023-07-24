@@ -13,7 +13,7 @@
 
 #### 1.2 어웨이터블
 
-- [rc/Python_Docs/Coroutine_Task/coroutine.py](https://github.com/yeoV/concurrency-python/blob/main/src/Python_Docs/Coroutine_Task/coroutine.py)
+- [src/Python_Docs/Coroutine_Task/coroutine.py](https://github.com/yeoV/concurrency-python/blob/main/src/Python_Docs/Coroutine_Task/coroutine.py)
 - 객체가 await 표현식에서 사용될 수 있을 때 -> Awaitable 객체라고 말함
 - 어웨이터블 객체에는 3가지 유형이 존재
    1. 코루틴 (Coroutine)
