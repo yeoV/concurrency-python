@@ -78,7 +78,8 @@ done, pending = await asyncio.wait(aws)
   - 별도의 스레드에서 func 함수를 비동기적으로 실행
   - func 최종 결과를 얻기 위해 await 할 수 있는 코루틴 반환
   - **이 함수는 IO-Bound function / method 에서 주요하게 활용**
-    - 사유 : Python의 GIL로 인해서 IO-Bound 함수에서 사용 가능.
+    - 사유 : Python의 GIL로 인해서 IO-Bound 함수에서 사용해야 성능 효과 있음
+      - 입력 대기시간이나 Sleep 의 경우, 해당 시간에 Context Switching 발생
       - GIL / 대체 python lib의 경우, CPU-Bound 작업에서도 활용 가능
 
 ## 2. 동기화 프리미티브
